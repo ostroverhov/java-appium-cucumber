@@ -23,6 +23,6 @@ public class Hook {
     @After
     public void close(Scenario scenario) {
         logger.info("===Close scenario [%s] with status [%s]===", scenario.getName(), scenario.getStatus());
-        AppFactory.quit(appFactory.getDriver());
+        //AppFactory.quit(appFactory.getDriver());
     }
 }

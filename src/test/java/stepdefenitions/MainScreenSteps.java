@@ -31,4 +31,9 @@ public class MainScreenSteps {
     public void checkCityName(String cityName) {
         mainScreen.getNameSelectedCity(cityName);
     }
+
+    @When("click sandwich menu button")
+    public void clickSandwichMenuButton() {
+        mainScreen.clickSandwichMenuButton();
+    }
 }
