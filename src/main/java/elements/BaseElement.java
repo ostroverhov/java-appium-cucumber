@@ -59,4 +59,9 @@ public class BaseElement {
         logger.info("Wait text [%s] from element [%s]", text, name);
         return WaitUtils.waitForTextToBe(text, driver, locator);
     }
+
+    protected boolean waitForVisible() {
+        logger.info("Wait visible element [%s]", name);
+        return WaitUtils.waitForVisibilityElement(driver, locator).isDisplayed();
+    }
 }
