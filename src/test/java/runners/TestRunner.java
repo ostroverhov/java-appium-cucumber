@@ -8,7 +8,10 @@ import org.testng.annotations.DataProvider;
         features = {"src/test/java/features"},
         glue = {
                 "hooks",
-                "stepdefinitions"
+                "stepdefenitions"
+        },
+        plugin = {
+                "io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm",
         },
         strict = true
 )
